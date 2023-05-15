@@ -23,7 +23,7 @@ const PlacesFormPage = () => {
         if (!id) {
             return;
         }
-        axios.get('places/'+id).then(res => {
+        axios.get('/places/'+id).then(res => {
             const {data} = res;
             setTitle(data.title);
             setAddress(data.address);
